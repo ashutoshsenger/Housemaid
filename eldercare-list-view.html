@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Housemaid</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-color:rgb(249,249,249);"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<style>
+    .month {
+    padding: 20px 25px;
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: #6D6D6D;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 0px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 0px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.2%;
+    color: #666;
+     font-size:12px;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.2%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+    
+</style>
+
+
+    <div class="fixed-top" style="height:30px;position:fixed;width:100%;background-color:#333132;display:inline-block;">
+        <div>
+            <p style="color:rgb(255,255,255);font-size:14px;padding-left:18px;padding-top:3px;margin-bottom:0px;height:30px;float:left;">help@housmaid.com | +91-9599383588<br><br><br></p>
+        </div>
+        <div class="social-icon-group" style="/*height:20px;*/float:left;margin-top:3px;">
+            <div style="height:20px;width:20px;background-image:url(&quot;assets/img/facebook.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:left;margin-left:10px;"></div>
+            <div style="height:20px;width:20px;background-image:url(&quot;assets/img/instagram@2x.png&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:left;margin-left:10px;"></div>
+            <div style="height:20px;width:20px;background-image:url(&quot;assets/img/google.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:left;margin-left:10px;"></div>
+            <div style="height:20px;background-image:url(&quot;assets/img/twitter.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:left;margin-left:14px;width:20px;"></div>
+        </div><a href="login.html" style="float:right;padding-right:20px;padding-left:20px;margin-right:18px;border-top:3px solid #93C64A;">Login</a></div>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="margin-top:30px;background-image:url(&quot;none&quot;);">
+        <div class="container"><a class="navbar-brand logo" href="index.html"><img src="assets/img/Home@2x.png" style="/*width:100%;*/height:50px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="./index.html#how-it">How it Works</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./index.html#why-us">Why Us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro" style="padding-top:41px;padding-bottom:0px;"></section>
+        <section class="service-container">
+            <div class="container" style="overflow:hidden;">
+                <div class="row">
+                    <div class="col-sm-12" data-aos="fade-up" style="margin-top:6px;">
+                        <a href="Maid list view.html">
+                            <div data-bs-hover-animate="pulse" class="service-icon"><img src="assets/img/maid-icon.svg" class="service-img">
+                                <p class="service-text" style="margin-bottom:0px;">MAID</p>
+                            </div>
+                        </a>
+                        <a href="cook-list-view.html">
+                            <div data-bs-hover-animate="pulse" class="service-icon"><img src="assets/img/cook-icon.svg" class="service-img">
+                                <p class="service-text" style="margin-bottom:0px;">COOK</p>
+                            </div>
+                        </a>
+                        <a href="babysitter-list-view.html">
+                            <div data-bs-hover-animate="pulse" class="service-icon"><img src="assets/img/babysitter-icon.svg" class="service-img">
+                                <p class="service-text" style="margin-bottom:0px;">BABYSITTER</p>
+                            </div>
+                        </a>
+                        <a href="eldercare-list-view.html">
+                            <div data-bs-hover-animate="pulse" class="service-icon" style="background-color:#aed485;color:white;"><img src="assets/img/eldercare-icon.svg" class="service-img">
+                                <p class="service-text" style="margin-bottom:0px;">ELDERCARE</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div data-bs-hover-animate="pulse" class="service-icon"><img src="assets/img/servant-icon.svg" class="service-img">
+                                <p class="service-text" style="margin-bottom:0px;">SERVANT</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div data-bs-hover-animate="pulse" class="service-icon"><img src="assets/img/gardener-icon.svg" class="service-img">
+                                <p class="service-text" style="margin-bottom:0px;">GARDENER</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div data-bs-hover-animate="pulse" class="service-icon"><img src="assets/img/driver-icon.svg" class="service-img">
+                                <p class="service-text" style="margin-bottom:0px;">DRIVER</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div data-bs-hover-animate="pulse" class="service-icon"><img src="assets/img/pantry-icon.svg" class="service-img">
+                                <p class="service-text" style="margin-bottom:0px;">PANTRY BOY</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="height:94px;background-color:#ffffff;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-12 col-xl-12">
+                        <h5 style="font-weight:900;margin:0px;padding-top:20px;">You are looking for Eldercare</h5><!--Modal Start for Maid -->
+<div>
+    <div tabindex="-1" class="modal fade" id="myModal" data-focus-on="input:first">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>You have Selected</h5><button type="button" class="close" data-dismiss="modal"><span>x</span></button></div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                   
+                   <div class="col-lg-2" style="text-align: center;"> 
+                       <img src="assets/img/reena-pic.png" style="width:77px;height:77px;">
+                   </div>
+                    
+                   <div class="col-md-7">
+                       <h5 style="margin-top:9px;">Reena Verma</h5>
+                           <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                              <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                   </div> 
+                    
+                   <div class="col-md-3" style="text-align: right;">
+                            <p class="verify" style="margin-top: 10px;">Mobile Verified</p>
+                            <p class="verify">Aadhar Verfied</p>
+                   </div>
+                   </div> 
+                   
+           
+             
+     <div class="row">
+           <div class="col-md-12" style="margin-top: 20px;border-top:1px solid #DFDFDF;padding-top:10px;">
+                <p class="modal-navs">Select Dates   >  Select Rooms and People  >  Services Required</p>
+           </div>  
+           
+         <div class="col-md-6 calendar">
+             <h6 style="font-weight:700;">Select Booking Dates</h6>
+             <p style="font-weight:300;">Book Maid from selected date onwards</p>
+             <div class="month">      
+                  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li  style="font-size:14px">
+      August 
+      <span>2017</span>
+    </li>
+  </ul>
+              </div>
+             <ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+             
+         </div>
+         
+         <div class="col-md-6">
+<h6 style="font-weight:700;">Select Time Slot</h6>  
+                  <div class="time-slot">8-10</div>     
+                  <div class="time-slot">10-12</div>
+                  <div class="time-slot">2-4</div>
+             <div class="time-slot">4-6</div>
+                  <div class="time-slot">6-8</div>
+                  <div class="time-slot">8-10</div>
+                  <div class="time-slot">4-6</div>
+                  <div class="time-slot">12 Hrs</div>
+                  <div class="time-slot">24 Hrs</div>
+             
+            <br>
+             <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Servant Room Available</label>
+        
+             
+         </div>
+     
+                </div>
+                       
+                </div>  
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" role="button" href="#myModal2" data-toggle="modal">Proceed</button></div>
+            </div>
+        </div>
+    </div>
+</div><!--Modal Start for Maid -2 -->
+<div>
+    <div tabindex="-1" class="modal fade" id="myModal2" data-focus-on="input:first">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>You have Selected</h5><button type="button" class="close" data-dismiss="modal"><span>x</span></button></div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                   
+                   <div class="col-lg-2" style="text-align: center;"> 
+                       <img src="assets/img/reena-pic.png" style="width:77px;height:77px;">
+                   </div>
+                    
+                   <div class="col-md-7">
+                       <h5 style="margin-top:9px;">Reena Verma</h5>
+                           <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                              <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                   </div> 
+                    
+                   <div class="col-md-3" style="text-align: right;">
+                            <p class="verify" style="margin-top: 10px;">Mobile Verified</p>
+                            <p class="verify">Aadhar Verfied</p>
+                   </div>
+                 </div> 
+                   
+                <div class="row">
+           <div class="col-md-12" style="margin-top: 20px;border-top:1px solid #DFDFDF;padding-top:10px;">
+                <p class="modal-navs">Select Dates   >  Select Rooms and People  >  Services Required</p>
+           </div>  
+           
+         <div class="col-md-9 calendar">
+             <h6 style="font-weight:700;">Select Number of Rooms</h6>
+             <p style="font-weight:300;">Book Maid from selected date onwards</p>
+             <div class="row">
+                 <div class="col-xs-2" style="width:50px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">1</div>
+                   <div class="col-xs-2" style="width:50px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">2</div>
+                  <div class="col-xs-2" style="width:50px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">3</div>
+                  <div class="col-xs-2" style="width:50px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">4</div>
+                  <div class="col-xs-2" style="width:50px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">5</div>
+                  <div class="col-xs-2" style="width:50px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">5+</div>
+                 
+             </div>
+             <h6 style="font-weight:700;margin-top:20px;">Select Number of People Living in the house</h6>
+             <div class="row">
+                 <div style="width:80px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">1-2</div>
+                 <div style="width:80px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">2-4</div>
+                  <div style="width:80px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">10+</div>
+                 <div style="width:80px;height:50px;background-color:#EDEDED;text-align:center;padding-top:12px;border-radius:5px;float:left;margin-right:10px;">20+</div>
+                    
+             </div>
+
+             
+         </div>
+         
+         <div class="col-md-3">
+           <h6 style="font-weight:700;margin-top:20px;">Size of the house</h6>
+         <input type="text" name="area" placeholder="2045 sqft" style="text-align:right;border:none;border-bottom:2px solid black;font-size:20px;width: 100%;">
+             
+         </div>
+     
+                </div>
+                       
+            </div>  
+        </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Back</button><button class="btn btn-primary" role="button" href="#myModal3" data-toggle="modal">Proceed</button></div>
+            </div>
+        </div>
+    </div>
+</div><!--Modal Start for Maid -2 -->
+<div>
+    <div tabindex="-1" class="modal fade" id="myModal3" data-focus-on="input:first">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>You have Selected</h5><button type="button" class="close" data-dismiss="modal"><span>x</span></button></div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                   
+                   <div class="col-lg-2" style="text-align: center;"> 
+                       <img src="assets/img/reena-pic.png" style="width:77px;height:77px;">
+                   </div>
+                    
+                   <div class="col-md-7">
+                       <h5 style="margin-top:9px;">Reena Verma</h5>
+                           <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                              <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                   </div> 
+                    
+                   <div class="col-md-3" style="text-align: right;">
+                            <p class="verify" style="margin-top: 10px;">Mobile Verified</p>
+                            <p class="verify">Aadhar Verfied</p>
+                   </div>
+                 </div> 
+                   
+                <div class="row">
+           <div class="col-md-12" style="margin-top: 20px;border-top:1px solid #DFDFDF;padding-top:10px;margin-bottom:20px;">
+                <p class="modal-navs">Select Dates   >  Select Rooms and People  >  Services Required</p>
+                  <h6 style="font-weight:700;">Select Services Required</h6>
+           </div>  
+           
+        
+          
+         <div class="col-md-6">
+           <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Bathroom Cleaning</label><br>
+              <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Bathroom Cleaning</label><br>
+              <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Bathroom Cleaning</label><br>
+              <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Bathroom Cleaning</label><br>
+              <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Bathroom Cleaning</label><br>
+         </div>
+                       <div class="col-md-6">
+                            <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Bathroom Cleaning</label><br>
+              <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Bathroom Cleaning</label><br>
+              <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Bathroom Cleaning</label><br>
+              <label><input type="checkbox" value="" style="margin-right: 5px;width: 25px;height: 15px;">Bathroom Cleaning</label><br>
+                    </div>
+                    <div class="col-md-12">
+                        <h3 style="padding-top:20px;font-weight:700;">Total Price : 12000/-</h3>
+                    </div>
+     
+                </div>
+                       
+            </div>  
+        </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Back</button><button class="btn btn-primary" role="button" href="#myModal4" data-toggle="modal">Agree and Book</button></div>
+            </div>
+        </div>
+    </div>
+</div><!--Modal Start for Maid -2 -->
+<div>
+    <div tabindex="-1" class="modal fade" id="myModal4" data-focus-on="input:first">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>You have Selected</h5><button type="button" class="close" data-dismiss="modal"><span>x</span></button></div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                   
+                   <div class="col-lg-2" style="text-align: center;"> 
+                       <img src="assets/img/reena-pic.png" style="width:77px;height:77px;">
+                   </div>
+                    
+                   <div class="col-md-7">
+                       <h5 style="margin-top:9px;">Reena Verma</h5>
+                           <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                              <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                   </div> 
+                    
+                   <div class="col-md-3" style="text-align: right;">
+                            <p class="verify" style="margin-top: 10px;">Mobile Verified</p>
+                            <p class="verify">Aadhar Verfied</p>
+                   </div>
+                 </div> 
+                   
+                <div class="row">
+           <div class="col-md-12" style="margin-top: 20px;border-top:1px solid #DFDFDF;padding-top:10px;">
+               
+           </div>  
+         
+                    <div class="col-xs-12 col-md-12" style="text-align:center;color:#303030;font-weight:300;padding-bottom:20px;">
+                    <img src="assets/img/heart.svg" width="100px" style="padding: 20px;"><br>
+                        <h3 style="color:#93C64A;font-weight:700;padding-bottom:20px;">Thank You !</h3>
+                        Your Booking has been sucessfully accepted and scheduled.<br>You will receive a call from our team shortly.
+                    </div>
+                    
+                </div>
+                       
+            </div>  
+        </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal" data-target="#myModal3">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+                        <p>32 results</p>
+                        <div class="dropdown" style="text-align:right;"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" id="drop-btn-1" style="background-color:rgb(255,255,255);color:rgb(0,0,0);margin-top:-112px;">Select Area</button>
+                            <div class="dropdown-menu dropdown-menu-right"
+                                role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" style="padding:15px;">
+                        <div id="worker-hover" style="border:solid 1px #dadada;border-radius:5px;background-color:#ffffff;text-align:center;padding-bottom:20px;"><img src="assets/img/reena-pic.png" style="width:77px;height:77px;margin-top:27px;">
+                            <h5 style="margin-top:9px;">Reena Verma<br></h5>
+                            <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                            <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                            <p id="demo" style="margin-top:12px;font-weight:700;margin-bottom:0px;">Availability&nbsp;<br>4-6 | 6-8 | 8-10 <br></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" style="padding:15px;">
+                        <div style="border:solid 1px #dadada;border-radius:5px;background-color:#ffffff;text-align:center;padding-bottom:20px;"><img src="assets/img/reena-pic.png" style="width:77px;height:77px;margin-top:27px;">
+                            <h5 style="margin-top:9px;color:#93C64A;">Reena Verma<br></h5>
+                            <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                            <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                            <div style="margin-top:16px;"><a class="btn book-btn-2
+         " role="button" href="#myModal" data-toggle="modal">BOOK NOW</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" style="padding:15px;">
+                        <div style="border:solid 1px #dadada;border-radius:5px;background-color:#ffffff;text-align:center;padding-bottom:20px;"><img src="assets/img/reena-pic.png" style="width:77px;height:77px;margin-top:27px;">
+                            <h5 style="margin-top:9px;">Reena Verma<br></h5>
+                            <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                            <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                            <p id="demo" style="margin-top:12px;font-weight:700;margin-bottom:0px;">Availability&nbsp;<br>4-6 | 6-8 | 8-10 <br></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" style="padding:15px;">
+                        <div style="border:solid 1px #dadada;border-radius:5px;background-color:#ffffff;text-align:center;padding-bottom:20px;"><img src="assets/img/reena-pic.png" style="width:77px;height:77px;margin-top:27px;">
+                            <h5 style="margin-top:9px;">Reena Verma<br></h5>
+                            <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                            <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                            <p id="demo" style="margin-top:12px;font-weight:700;margin-bottom:0px;">Availability&nbsp;<br>4-6 | 6-8 | 8-10 <br></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" style="padding:15px;">
+                        <div style="border:solid 1px #dadada;border-radius:5px;background-color:#ffffff;text-align:center;padding-bottom:20px;"><img src="assets/img/reena-pic.png" style="width:77px;height:77px;margin-top:27px;">
+                            <h5 style="margin-top:9px;">Reena Verma<br></h5>
+                            <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                            <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                            <p id="demo" style="margin-top:12px;font-weight:700;margin-bottom:0px;">Availability&nbsp;<br>4-6 | 6-8 | 8-10 <br></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" style="padding:15px;">
+                        <div style="border:solid 1px #dadada;border-radius:5px;background-color:#ffffff;text-align:center;padding-bottom:20px;"><img src="assets/img/reena-pic.png" style="width:77px;height:77px;margin-top:27px;">
+                            <h5 style="margin-top:9px;">Reena Verma<br></h5>
+                            <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                            <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                            <p id="demo" style="margin-top:12px;font-weight:700;margin-bottom:0px;">Availability&nbsp;<br>4-6 | 6-8 | 8-10 <br></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" style="padding:15px;">
+                        <div style="border:solid 1px #dadada;border-radius:5px;background-color:#ffffff;text-align:center;padding-bottom:20px;"><img src="assets/img/reena-pic.png" style="width:77px;height:77px;margin-top:27px;">
+                            <h5 style="margin-top:9px;">Reena Verma<br></h5>
+                            <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                            <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                            <p id="demo" style="margin-top:12px;font-weight:700;margin-bottom:0px;">Availability&nbsp;<br>4-6 | 6-8 | 8-10 <br></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" style="padding:15px;">
+                        <div style="border:solid 1px #dadada;border-radius:5px;background-color:#ffffff;text-align:center;padding-bottom:20px;"><img src="assets/img/reena-pic.png" style="width:77px;height:77px;margin-top:27px;">
+                            <h5 style="margin-top:9px;">Reena Verma<br></h5>
+                            <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                            <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                            <p id="demo" style="margin-top:12px;font-weight:700;margin-bottom:0px;">Availability&nbsp;<br>4-6 | 6-8 | 8-10 <br></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" data-aos="zoom-in" style="padding:15px;">
+                        <div style="border:solid 1px #dadada;border-radius:5px;background-color:#ffffff;text-align:center;padding-bottom:20px;"><img src="assets/img/reena-pic.png" style="width:77px;height:77px;margin-top:27px;">
+                            <h5 style="margin-top:9px;">Reena Verma<br></h5>
+                            <p style="margin-top:13px;margin-bottom:0px;">23 | 4-5 Yr Exp<br></p>
+                            <p style="margin:0px;margin-top:0px;">Unmarried<br></p>
+                            <p id="demo" style="margin-top:12px;font-weight:700;margin-bottom:0px;">Availability&nbsp;<br>4-6 | 6-8 | 8-10 <br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer" style="margin-top:53px;">
+            <div class="container" style="padding-top:15px;">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                        <p style="color:rgb(211,211,211);font-family:Avenir;font-size:14px;font-weight:500;line-height:2.2;letter-spacing:-0px;"><br>About Us<br>Refund &amp; Replacement Policy<br>Privacy Policy<br>Terms of Use<br>Feedback<br></p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                        <p style="color:rgb(211,211,211);font-family:Avenir;font-size:14px;font-weight:500;line-height:2.2;letter-spacing:-0px;margin-bottom:4px;"><br>Contact Us <br></p><p id="demo" style="color:rgb(153,153,153);font-family:Avenir;font-size:14px;font-weight:500;line-height:1.5;letter-spacing:-0px;">202, Aapka Bazar, Gurudwara Road<br />Gurgaon 122001<br /></p>
+                        <p style="color:rgb(153,153,153);font-family:Avenir;font-size:14px;font-weight:500;line-height:2.2;letter-spacing:-0px;margin-bottom:4px;">Email : help@housmaid.com<br>Mobile : + 91 9599383588<br></p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4" id="empty-col"></div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4" id="footer-social" style="text-align:right;"><img src="assets/img/home-housemaid@2x.jpg" style="width:60%;margin-top:24px;">
+                        <p style="color:rgb(211,211,211);font-family:Avenir;font-size:14px;font-weight:500;line-height:2.2;letter-spacing:-0px;">Refer a Worker<br>LogIn<br></p>
+                        <div class="pulse animated social-icon-group" style="height:24px;">
+                            <div style="height:24px;width:24px;background-image:url(&quot;assets/img/twitter.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:right;margin-left:10px;"></div>
+                            <div style="height:24px;width:24px;background-image:url(&quot;assets/img/instagram@2x.png&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:right;margin-left:10px;"></div>
+                            <div style="height:24px;width:24px;background-image:url(&quot;assets/img/google.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:right;margin-left:10px;"></div>
+                            <div style="height:24px;background-image:url(&quot;assets/img/facebook.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:right;margin-left:14px;width:24px;"></div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/cs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="11px" viewBox="0 0 40 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home--housemaid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-276.000000, -735.000000)" opacity="0.474071558" stroke-linecap="square">
+        <path d="M280,740.5 L310,740.5" id="Line" stroke="#979797" stroke-width="2" fill="#9B9B9B"></path>
+        <path id="Line-decoration-1" d="M310,740.5 L299.2,737.5 L299.2,743.5 L310,740.5 Z" stroke="#979797" stroke-width="2" fill="#9B9B9B"></path>
+    </g>
+</svg>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Housemaid</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-color:rgb(249,249,249);"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<style>
+    .month {
+    padding: 20px 25px;
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: #6D6D6D;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 0px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 0px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.2%;
+    color: #666;
+     font-size:12px;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.2%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+    
+</style>
+
+
+    <div class="fixed-top" style="height:30px;position:fixed;width:100%;background-color:#333132;display:inline-block;">
+        <div>
+            <p style="color:rgb(255,255,255);font-size:14px;padding-left:18px;padding-top:3px;margin-bottom:0px;height:30px;float:left;">help@housmaid.com | +91-9599383588<br><br><br></p>
+        </div>
+        <div class="social-icon-group-top" style="/*height:20px;*/float:left;margin-top:3px;">
+            <div style="height:20px;width:20px;background-image:url(&quot;assets/img/facebook.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:left;margin-left:10px;"></div>
+            <div style="height:20px;width:20px;background-image:url(&quot;assets/img/instagram@2x.png&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:left;margin-left:10px;"></div>
+            <div style="height:20px;width:20px;background-image:url(&quot;assets/img/google.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:left;margin-left:10px;"></div>
+            <div style="height:20px;background-image:url(&quot;assets/img/twitter.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:left;margin-left:14px;width:20px;"></div>
+        </div><a href="login.html" style="float:right;padding-right:20px;padding-left:20px;margin-right:18px;border-top:3px solid #93C64A;">Login</a></div>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="margin-top:30px;background-image:url(&quot;none&quot;);">
+        <div class="container"><a class="navbar-brand logo" href="index.html"><img src="assets/img/Home@2x.png" style="/*width:100%;*/height:50px;"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="./index.html#how-it">How it Works</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./index.html#why-us">Why Us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro" style="padding-top:41px;padding-bottom:0px;"></section>
+        <section class="service-container" style="background-image:url(&quot;assets/img/about.jpg&quot;);background-position:center;background-size:cover;height:132px;">
+            <div class="container" style="overflow:hidden;">
+                <h1 style="text-align:center;margin-top:41px;color:white;">About Us<br></h1>
+            </div>
+        </section>
+        <section style="background-color:#ffffff;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-10 col-xl-8 offset-md-0 offset-lg-1 offset-xl-2">
+                        <p style="text-align:center;padding:30px 0;margin-bottom:0px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="padding-top:20px;padding-bottom:20px;">
+            <h5 style="text-align:center;padding-top:32px;padding-bottom:45px;"><strong>How we are different from others</strong><br></h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" data-aos="fade-right" style="color:#828282;font-size:18px;font-weight:300;padding-top:20px;border-top:1px solid #EBEBEB;">
+                        <p>Work on comission model, they charge money for connecting customers to the maid. No matter customer is satisfied or not.<br><br>No Responsibility, No Accountablility<br><br>No Verification and backgorund check<br><br>No Trial Period<br><br>No
+                            Replacement<br><br>No Customer Support<br><br>Most Aggregators &amp; Agencies are not registered companies<br><br>They charge advance money from the customer<br><br>Run by single owner, without caring much about quality or
+                            professional service<br></p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6" data-aos="fade-right" data-aos-delay="100" style="color:#479365;font-size:18px;border-left:1px solid #EBEBEB;border-top:1px solid #EBEBEB;font-weight:300;padding-top:20px;"><p><i class="far fa-circle circle-icn"></i>
+We hire professional workers, and our workers serve to customers directly. We don’t charge any commision from the customers<br /><br /><i class="far fa-circle circle-icn"></i>
+Full Responsibility, No Accountablility<br /><br /><i class="far fa-circle circle-icn"></i>
+Proper Verification and backgorund check with proof<br /><br /><i class="far fa-circle circle-icn"></i>
+2
+    Day Trial Period<br /><br /><i class="far fa-circle circle-icn"></i>
+Free Replacement<br /><br /><i class="far fa-circle circle-icn"></i>
+365 Days Customer Support<br /><br /><i class="far fa-circle circle-icn"></i>
+We are a Private Limited Registered Company<br /><br /><i class="far fa-circle circle-icn"></i>
+We don’t charge any advance money from our customers<br /><br /><i class="far fa-circle circle-icn"></i>
+Our company is run by a group of professionals
+    graduated from india’s premier institutes<br /></p></div>
+                </div>
+            </div>
+        </section>
+        <section style="background-color:#ffffff;padding-bottom:67px;padding-top:42px;">
+            <div class="container" style="text-align:center;"><img src="assets/img/smily.svg" data-aos="zoom-in" style="margin-top:32px;margin-bottom:32px;">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-8 offset-xl-2">
+                        <p data-aos="fade-up" data-aos-delay="100" style="font-size:20px;"><strong>Our each worker is verified and professionally trained&nbsp;</strong><br><strong>with well maintained track record !</strong><br></p>
+                    </div>
+                    <div class="col-xl-8 offset-xl-2" data-aos="fade-up" data-aos-delay="50">
+                        <h1 style="padding-top:20px;font-size:16px;"><strong>TRUST FACTOR</strong><br></h1>
+                        <h1 style="padding-top:20px;font-size:18px;font-weight:300;line-height:26px;margin-bottom:27px;">Mobile verification&nbsp; |&nbsp; Face to face interview&nbsp; | &nbsp;<br>Aadhar verification&nbsp; |&nbsp; Reference check&nbsp; |&nbsp; Permanent&nbsp;<br>address verification&nbsp; |&nbsp; Background check<br></h1><a href="Maid list view.html"
+                            style="font-size:18px;">see list of our workers &gt;<br></a></div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container" style="padding-top:15px;">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                        <p style="color:rgb(211,211,211);font-family:Avenir;font-size:14px;font-weight:500;line-height:2.2;letter-spacing:-0px;"><br>About Us<br>Refund &amp; Replacement Policy<br>Privacy Policy<br>Terms of Use<br>Feedback<br></p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4">
+                        <p style="color:rgb(211,211,211);font-family:Avenir;font-size:14px;font-weight:500;line-height:2.2;letter-spacing:-0px;margin-bottom:4px;"><br>Contact Us <br></p><p id="demo" style="color:rgb(153,153,153);font-family:Avenir;font-size:14px;font-weight:500;line-height:1.5;letter-spacing:-0px;">202, Aapka Bazar, Gurudwara Road<br />Gurgaon 122001<br /></p>
+                        <p style="color:rgb(153,153,153);font-family:Avenir;font-size:14px;font-weight:500;line-height:2.2;letter-spacing:-0px;margin-bottom:4px;">Email : help@housmaid.com<br>Mobile : + 91 9599383588<br></p>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4" id="empty-col"></div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4" id="footer-social" style="text-align:right;"><img src="assets/img/home-housemaid@2x.jpg" style="width:60%;margin-top:24px;">
+                        <p style="color:rgb(211,211,211);font-family:Avenir;font-size:14px;font-weight:500;line-height:2.2;letter-spacing:-0px;">Refer a Worker<br>LogIn<br></p>
+                        <div class="pulse animated social-icon-group" style="height:24px;">
+                            <div style="height:24px;width:24px;background-image:url(&quot;assets/img/twitter.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:right;margin-left:10px;"></div>
+                            <div style="height:24px;width:24px;background-image:url(&quot;assets/img/instagram@2x.png&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:right;margin-left:10px;"></div>
+                            <div style="height:24px;width:24px;background-image:url(&quot;assets/img/google.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:right;margin-left:10px;"></div>
+                            <div style="height:24px;background-image:url(&quot;assets/img/facebook.svg&quot;);background-position:center;background-size:cover;background-repeat:repeat;float:right;margin-left:14px;width:24px;"></div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="assets/js/cs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
